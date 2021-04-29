@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  public formTitle: string;
+  public formDescription: string;
+  public email: string;
   constructor() { }
 
   ngOnInit(): void {
+    this.formTitle = "Pagina de contato";
+    this.formDescription = "Descricão depois de iniciar o componente";
   }
 
 }

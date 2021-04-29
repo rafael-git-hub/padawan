@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(180, 180, 180);
+}
+
+.row{
+    background-color: rgba(68, 68, 68, 0.205);
+    border-radius: 15px;
+
+}
+
