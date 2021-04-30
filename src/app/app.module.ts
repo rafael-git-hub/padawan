@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FormComponent } from './form/form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { from } from 'rxjs';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { from } from 'rxjs';
     HeaderComponent,
     HomeComponent,
     ContactComponent,
-    FormComponent
+    FormComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,

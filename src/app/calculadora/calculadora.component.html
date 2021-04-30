@@ -1,0 +1,33 @@
+<h1>{{ title}}</h1>
+
+
+<hr>
+
+<div class="input-group">
+    <input type="number" class="form-control small" placeholder="digite um numero:"
+    [(ngModel)]='valor0'>
+
+    
+</div>
+    
+   <div class="botao">
+       <p>Escolha uma das operações para calcular a conta</p>
+    <button type="button" class="btn btn-warning" id="btn-divisao" (click)="getOperador('/')"value="/">divisão /</button>
+    
+    <button type="button" class="btn btn-warning" id="btn-multiplicaçao" (click)="getOperador('*')"value="*">Multiplicação x</button>
+    
+    <button type="button" class="btn btn-warning" id="btn-adicao" (click)="getOperador('-')"value="-">Adição -</button>
+    
+    <button type="button" class="btn btn-warning" id="btn-soma" (click)="getOperador('+')"value="+">Soma +</button>
+  
+
+    <input type="number" class="form-control" placeholder="digite outro numero:"
+    [(ngModel)]='valor1'>
+
+
+    <button type="submit" class="btn btn-danger" (click)="calcular()">Calcular</button>
+
+    <input type="number" class="form-control" disabled placeholder="Resultado: {{result}}">
+   
+
+</div> 

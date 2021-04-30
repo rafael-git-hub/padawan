@@ -1,12 +1,30 @@
+<div class="row">
 <h1>{{formTitle}}</h1>
 
 <p>{{formDescription}}</p>
 
 <p>Digite seu E-mail:</p>
-<div class="input-group mb-3">
-    <input type="text" [(ngModel)] = "email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-    <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+<div class="row-cols-1">
+    <input type="text" [(ngModel)] = "nomeDigitado" lass="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon2">
+    <span class="input-group-text" id="basic-addon2">@hotmail.com</span>
   </div>
 
+  <p *ngIf="nomeDigitado">{{ nomeDigitado }}@exemplo.com</p>
 
-<p *ngIf="email">{{ email }}@exemplo.com</p>
+  <button type="button" class="btn btn-primary"(click)="AdicionarEmail()">Adicionar</button>
+
+  <div class="row-cols-auto" *ngIf="emailsLocal.length">
+
+  <p>Lista de Contatos</p>
+  <ul>
+    <li *ngFor="let item of emailsLocal">{{ item }}
+    </li>
+  </ul>
+</div>
+</div>
+
+
+ 
+
+
+
